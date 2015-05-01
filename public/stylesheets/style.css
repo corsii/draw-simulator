@@ -1,0 +1,26 @@
+h1 {
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div {
+  margin: 5px 5px 0px 0px;
+}
+
+th {
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+}
+
+tr {
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+}

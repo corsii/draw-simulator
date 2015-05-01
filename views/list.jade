@@ -1,0 +1,29 @@
+extends layout
+  
+block content
+    h1= title
+
+    div
+      div
+      table
+        thead
+          th Name
+          th Country
+          th City
+          th Club Coefficient
+          th Country Coefficient
+          th League Champion
+          th Champions League Title Holder
+        tbody
+          each item in items
+            tr
+              td #{item.name}
+              td #{item.country}
+              td #{item.city}
+              td #{item.clubcoefficient}
+              td #{item.countrycoefficient}
+              td #{item.leaguechampion}
+              td #{item.clwinner}
+
+    form(method="get", action="/")
+      button(type="submit") Home

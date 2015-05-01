@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+  p Name: #{item.name}
+  p Country: #{item.country}
+  p City: #{item.city}
+  p Club Coefficient: #{item.clubcoefficient}
+  p Country Coefficient: #{item.countrycoefficient}
+  p League Champion: #{item.leaguechampion}
+  p Champions League Title Holder: #{item.clwinner}
+  a(href='http://localhost:3000') Home
