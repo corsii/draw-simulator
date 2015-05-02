@@ -5,37 +5,9 @@ block content
   p Welcome to #{title}
 
   div
-    p Enter club information
-    form(method='post', action='/add')
-      div
-        label Country
-        br
-        select#countries(name='countries')
-          each item in items
-            option(value=item) #{item}
-      div
-        label Clubs
-        br
-        select#clubs(name='clubs')
-          each item in list
-            option(value=item) #{item}
-      div
-        label League Champion
-        br
-        input#leaguechampion(type='radio', name='leaguechampion', value='yes')
-        | Yes
-        input#leaguechampion(type='radio', name='leaguechampion', value='no')
-        | No
-      div
-        label Champions League Winner
-        br
-        input#clwinner(type='radio', name='clwinner', value='yes')
-        | Yes
-        input#clwinner(type='radio', name='clwinner', value='no')
-        | No
-      div
-        button(type="submit") Submit
+    form(method='get', action='/championsleaguedraw')
+      button(type="submit") Simulate Champions League Draw
 
   div
-    form(method="get", action="/list")
-      button(type="submit") List Clubs
+    form(method="get", action="/europaleaguedraw")
+      button(type="submit") Simulate Europa League Draw
