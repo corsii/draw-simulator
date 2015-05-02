@@ -8,27 +8,17 @@ block content
     p Enter club information
     form(method='post', action='/add')
       div
-        label Name
-        br
-        input#name(type='text', name='name')
-      div
         label Country
         br
         select#countries(name='countries')
           each item in items
             option(value=item) #{item}
       div
-        label City
+        label Clubs
         br
-        input#city(type='text', name='city')
-      div
-        label Club Coefficient
-        br
-        input#clubcoefficient(type='text', name='clubcoefficient')
-      div
-        label Country Coefficient
-        br
-        input#countryoefficient(type='text', name='countrycoefficient')
+        select#clubs(name='clubs')
+          each item in list
+            option(value=item) #{item}
       div
         label League Champion
         br
