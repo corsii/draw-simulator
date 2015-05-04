@@ -8,3 +8,8 @@ block content
   p Welcome to #{title}
 
   div.formArea
+
+  - if(error)
+    div.error #{error}
+
+  div.mainArea
